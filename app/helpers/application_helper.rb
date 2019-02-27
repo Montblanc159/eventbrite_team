@@ -5,4 +5,8 @@ module ApplicationHelper
       flash[:danger] = "Accès non-autorisé"
     end
   end
+
+  def text_extract(string, number)
+    string[0..number]
+  end
 end
